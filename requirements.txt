@@ -1,0 +1,7 @@
+transformers
+accelerate
+peft
+openai-whisper
+streamlit
+torch
+sentencepiece

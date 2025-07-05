@@ -3,7 +3,11 @@ from flask_cors import CORS
 from transcribe import transcribe_audio
 from summarize import generate_summary
 from summarize_ollama import summarize_with_ollama
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+hf_token = os.getenv("HUGGINGFACE_TOKEN")
 app = Flask(__name__)
 CORS(app)
 

@@ -1,6 +1,6 @@
 from transformers import pipeline
 
-summarizer = pipeline("summarization", model="google/pegasus-xsum")
+summarizer = pipeline("summarization", model="google/pegasus-xsum", token=hf_token)
 
 def generate_summary(text):
     chunks = [text[i:i+1024] for i in range(0, len(text), 1024)]

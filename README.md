@@ -112,6 +112,4 @@ Built with:
 
 ---
 
-## 📄 License
 
-MIT License
